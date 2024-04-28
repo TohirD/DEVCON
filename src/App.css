@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Assuming a black background */
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+    overflow: auto;
+    font-family: "Reddit Mono", monospace;
+    }
+  
+  /* Logo and navigation bar styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .logo {
+    color: #4CAF50; /* Example green color, replace with actual color code from design */
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 209.75px;
+    height: 26px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  nav li:last-child {
+    background: linear-gradient(#11998E, #19CB5C); /* Example green color */
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  /* Main content styles */
+  h1 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    background-image: linear-gradient(#129A8E, #19CA5E);
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+  }
+  
+  p {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .animation{
+    margin-bottom: 2em;
+  }
+  
+  /* Card styles */
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 24px;
+    width: 302px; /* Fixed width, you may want to use percentages or flexbox for responsiveness */
+    height: 234px;
+    text-align: center;
+  }
+
+  .card:nth-child(2){
+    transform: rotate(3deg);
+  }
+  .card:first-child{
+    transform: rotateZ(356deg);
+  }
+
+  .card:last-child{
+    transform: rotate(355deg);
+  }
+  
+  .card h2 {
+    font-size: 2em;
+    margin-top: 70px;
+  }
+  
+  .card p {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  /*  */
+  .expertise-section {
+    color: white;
+    background-color: #000; 
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+    
+    h2{
+      margin-bottom: 80px;
+      font-size: 50px; 
+    }
+    
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @media(min-width: 1595px){
+      .expertise-section {
+        width: 100%;
+      }
+      .cards-container{
+        width: 900px;
+        margin: 0 auto;
+      }
+    }
+
+    
+    .cards {
+      background-color: #fff; 
+      color: #000; 
+      border-radius: 18px;
+      padding: 60px 60px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      text-align: center;
+      transition: transform 0.2s; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 254px;
+      height: 150px;
+      
+      &:hover {
+        transform: translateY(-5px); 
+      }
+    }
+
+    .cards:first-child{
+      transform: rotate(356deg);
+    }
+    .cards:last-child{
+      transform: rotate(3deg);
+    }
+    .cards:nth-child(2){
+      transform: rotate(358deg);
+    }
+    .cards:nth-child(3){
+      transform: rotate(4deg);
+    }
+    .cards:nth-child(4){
+      transform: rotate(357deg);
+    }
+    .cards:nth-child(5){
+      transform: rotate(4deg);
+    }
+  }
+
+  /*  */
+
+  .projects-gallery {
+    color: white;
+    padding: 40px;
+    text-align: center;
+  
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+  
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .project-card {
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      width: 600px;
+  
+      &:hover .project-image {
+        opacity: 0.7;
+      }
+  
+      .project-image {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease;
+        border-radius: 15px;
+      }
+  
+      .project-description {
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+        font-size: 24px;
+  
+        .project-title {
+          font-weight: bold;
+          font-size: 24px;
+          float: left;
+        }
+        p{
+          font-size: 24px;
+          float: left;
+        }
+      }
+    }
+  }
+  

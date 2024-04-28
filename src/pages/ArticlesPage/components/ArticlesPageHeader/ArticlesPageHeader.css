@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .logo {
+    color: #4CAF50; /* Example green color, replace with actual color code from design */
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 209.75px;
+    height: 26px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  nav li:last-child {
+    background: linear-gradient(#11998E, #19CB5C); /* Example green color */
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
